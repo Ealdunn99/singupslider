@@ -1,0 +1,278 @@
+
+///////////////1
+
+body{height: 500px;
+    color: rgb(255, 255, 255);
+   }
+
+.container{
+
+    margin-top: 5px;
+}
+
+.bar{
+	margin: 5px;
+    transition: 3s;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to right, rgb(0, 255, 255), rgba(0, 255, 255, 0.445));
+
+}
+.color{
+    
+    transition: 1s;
+    border-radius: 10px;
+   width: 0%;
+    height: 20px;
+    background-image: linear-gradient(to right, rgba(255, 196, 0, 0.349), rgb(255, 145, 0));
+}
+
+.button{
+    // position: absolute;    //for lesson5
+    top: 80px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    width:100px;
+    margin: 30px auto;//for lesson 5   original : margin-top:20px;
+    background-color: rgb(0, 255, 255);
+	font-weight: 700;
+	opacity: 1;
+	
+
+}
+
+.non{
+    transition: 2s;
+    opacity: 0;
+}
+.non2{
+    display: none;
+}
+.sms{
+   
+    position: absolute;
+   opacity: 0;
+    transition: 3s;
+    margin:  auto;
+    text-align: center;
+
+    padding: 10px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    width:200px;
+    background-image: linear-gradient(to right,rgb(225, 0, 255), rgb(255, 145, 0));
+    font-weight: 700;
+}
+.smsyes{
+    position: relative;
+    transition: 3s;
+    opacity: 1;
+}
+.text{
+    transition: 2s;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.textnon{
+    opacity: 0!important;
+}
+
+
+//////////////////////////////2
+
+// body{height: 500px;
+//     background-color: rgb(0, 0, 0);
+    
+//    }
+
+   .slider{
+       
+    transition: 1s;   
+    opacity: 0;
+       img{
+           width: 100%;
+       }
+	   width: 30vw;
+	   min-width: 220px;
+       margin: 20px auto;
+       border:orange 1px solid;
+   }
+   .imglist{
+	   flex-wrap: wrap;
+    margin-top: 20px;
+       img{max-width: 100px;
+            width: 15vw;//dinamik ele
+       }
+   }
+
+.buttons{
+    transition: 1s;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    top: 200px;
+    width: 20px;
+    border-radius: 100px;
+    background-color: rgb(126, 126, 126);
+}
+.left{
+left: 15%;
+}
+.right{
+right: 15%;
+}
+.close{
+    color: white;
+    transition: 1s;
+    opacity: 0;
+	position: absolute;
+    top: 150px;
+    right: 11%;
+}
+
+.container{
+    position: relative;
+}
+.yes{
+    transition: 2s;
+    opacity: 1;
+}
+
+
+
+
+////////////////////////3
+
+input{
+	background-color: white;
+	transition: 1s;
+}
+.input {
+	margin: 5px;
+	position:relative;
+	font-size: 1.5em;
+	background: white;
+	padding: 5px;
+	display: inline-block;
+	////only for border radius
+	border-radius: 100px;
+	*:not(span) {
+		position: relative;
+		display: inherit;
+		border-radius: inherit;
+		margin: 0;
+		border: none;
+		outline: none;
+		padding: 0 .325em;
+		z-index: 1;
+		&:focus + span {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+	////only for border radius end
+	span {
+		
+		transform: scale(.993, .94);  
+		transition: transform .5s, opacity .25s;
+		opacity: 0;  
+		
+		position:absolute;
+		z-index: 0;  
+		margin:4px; 
+		left:0;
+		top:0;
+		right:0;
+		bottom:0;
+		border-radius: inherit;
+		pointer-events: none;  
+	 
+		box-shadow: inset 0 0 0 0px #fff,
+			0 0 0 11px #fff,
+			8px -8px 30px #1beabd, 
+			-8px 8px 30px #10abff;
+	}
+	
+}
+
+body {
+	background-color: #3498db;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+::placeholder {
+	color:#cbd0d5;
+}
+
+
+p{
+	margin:30px auto;
+	width: 50%
+}
+
+.box{
+	transition: 1s;
+	font-size: 18px;
+	font-weight: 600;
+	color: orange;
+	background-color: white;
+	width: 200px;
+	border-radius: 20px;
+	margin: 5px auto;
+	opacity: 0;
+
+}
+.box2{
+	transition: 1s;
+	font-size: 18px;
+	font-weight: 600;
+	color: orange;
+	background-color: white;
+	width: 100%;
+	max-width: 600px;
+	border-radius: 20px;
+	margin: 5px auto;
+	opacity: 0;
+
+}
+.yes{
+	transition: 1s;
+	opacity: 1;
+}
+
+.form{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+		font-family: 'Indie Flower', cursive;
+		font-size: 30px;
+		font-weight: 700;
+		color: orange;
+		background-color: rgb(255, 255, 255);
+		width: 130px;
+		height: 55px;
+		border-radius: 30px;
+		margin: 10px auto;
+		margin-top:100px;
+		
+		
+}
+.red{
+	transition: 1s;
+	background-color: red;
+	
+}
+
+input:focus { 
+	background-color: rgb(255, 255, 255);
+  }
